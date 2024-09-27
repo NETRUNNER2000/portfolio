@@ -1,12 +1,20 @@
 
 import { PerspectiveCamera } from '@react-three/drei'
 import {Canvas} from '@react-three/fiber'
-import GamingPC from '../components/GamingPC'
+import GamingPC from '../Components/GamingPC'
 import { Suspense } from 'react'
-import CanvasLoader from '../components/CanvasLoader'
+import CanvasLoader from '../Components/CanvasLoader'
 import { Leva, useControls } from 'leva'
+import CameraMovement from '../Components/CameraMovement'
 
 const Hero = () => {
+
+  // Usage
+const positions = [
+    [0, 5, 10],
+    [0, 10, 15],
+    [0, 5, 10]
+  ];
   const controls = useControls("GamingPC", {
     rotationX: {
       value: 2.5,
@@ -76,8 +84,9 @@ const Hero = () => {
       <Leva/>
         <Canvas className = "w-full h-full">
           <Suspense fallback={CanvasLoader}>
-          
           <PerspectiveCamera makeDefault position={[-1,40,20]} rotation={[0,0.24,0]}/>
+          {/* <CameraMovement positions={positions}/>  */}
+          
           <ambientLight intensity={1}/>
           <GamingPC 
             scale={[controls.scaleX,controls.scaleY,controls.scaleZ]}
