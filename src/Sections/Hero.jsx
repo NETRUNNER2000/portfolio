@@ -6,9 +6,11 @@ import { Suspense } from 'react'
 import CanvasLoader from '../Components/CanvasLoader'
 import { Leva, useControls } from 'leva'
 import CameraMovement from '../Components/CameraMovement'
-
+import { useMediaQuery } from 'react-responsive'
+import HeroCamera from '../Components/HeroCamera'
 const Hero = () => {
 
+  const isMobile = useMediaQuery({maxWidth: 768})
   // Usage
 const positions = [
     [0, 5, 10],
@@ -73,27 +75,30 @@ const positions = [
     <section className="min-h-screen w-full flex flex-col relative">
       <div className="w-full mx-auto flex flex-col z-40 sm:mt-36 mt-20 c-space gap-3">
         <p className="sm:text-3xl text-xl font-medium text-center text-white font-generalsans"> 
-            Hi I'm Shaahid
+            Hi, I'm Shaahid
             <span className="waving-hand">🫡</span>
         </p>
         <p className="hero_tag text-gray_gradient">
-            Software Developer and Computer Wizard
+            Software Developer & Computer Wizard
         </p>
       </div>
       <div className="w-full h-full absolute inset-0">
       <Leva/>
         <Canvas className = "w-full h-full">
           <Suspense fallback={CanvasLoader}>
-          <PerspectiveCamera makeDefault position={[-1,40,20]} rotation={[0,0.24,0]}/>
-          {/* <CameraMovement positions={positions}/>  */}
-          
-          <ambientLight intensity={1}/>
-          <GamingPC 
-            scale={[controls.scaleX,controls.scaleY,controls.scaleZ]}
-            // scale = {25}
-            position={[controls.posX,controls.posY,controls.posZ]} 
-            rotation={[controls.rotX,controls.rotY,controls.rotZ]} />
-          
+            <PerspectiveCamera makeDefault position={[-1,40,20]} rotation={[0,0.255,0]}/>
+            {/* <CameraMovement positions={positions}/>  */}
+            
+            <ambientLight intensity={1}/>
+            <HeroCamera>
+            <GamingPC 
+              scale={[controls.scaleX,controls.scaleY,controls.scaleZ]}
+              // scale = {25}
+              position={[controls.posX,controls.posY,controls.posZ]} 
+              rotation={[controls.rotX,controls.rotY,controls.rotZ]} />
+            
+            </HeroCamera>
+         
           </Suspense>
    
         </Canvas>

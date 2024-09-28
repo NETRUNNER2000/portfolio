@@ -58,11 +58,11 @@ export const navLinks = [
   
   export const myProjects = [
     {
-      title: 'Dummy text',
-      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      title: 'Realistic Vegetation Cover Through Statistical Sampling',
+      desc: 'For my final computer science project, myself and 2 other friends collaborated to build a Unity render that could realistically mimic vegetation coverage while running in under 5 seconds',
       subdesc:
-        'more dummy text',
-      href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
+        'I accepted the role as software architect during this project and created an event driven system in Unity for my team to build on top of. I spent much of my time optimising data structures, implementing parallel algorithms for performance and making sure the team was aware and ready to tackle changing requirements. Part of my time was also spent sharing my knowledge of Unity with other groups and discussing new ways to shave off a few milliseconds wherever possible. I am very proud of this project, as it was an opportunity for me to put the passions and skills I have accumulated over the last 8 years into a single system. In many ways PlantGen24 is a piece of me that I will fondly look back on',
+      
       texture: '/textures/project/project1.mp4',
       logo: '/assets/project-logo1.png',
       logoStyle: {
@@ -74,32 +74,27 @@ export const navLinks = [
       tags: [
         {
           id: 1,
-          name: 'React.js',
-          path: '/assets/react.svg',
+          name: 'Unity Engine',
+          path: '/assets/unity.png',
         },
         {
           id: 2,
-          name: 'TailwindCSS',
-          path: 'assets/tailwindcss.png',
+          name: 'C#',
+          path: 'assets/Csharp.png',
         },
         {
           id: 3,
-          name: 'TypeScript',
-          path: '/assets/typescript.png',
-        },
-        {
-          id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
+          name: 'Python',
+          path: '/assets/python.png',
         },
       ],
     },
     {
-      title: 'LiveDoc - Real-Time Google Docs Clone',
-      desc: 'LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.',
+      title: 'Self Driving Video Game AI Using NEAT',
+      desc: 'Neuroevolution of Augmenting Topologies is a form of machine learning that takes inspiration from evolution and natural selection.',
       subdesc:
-        'With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.',
-      href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
+        "With this project I built a simple neural network to control a car in Unity. The network took raycast distances as inputs before outputting values to the steering, breaks and accelerator. Collections of cars grouped as generations were created and evaluated according to a fitness function. Neural networks were encoded as 'genes' in this simulation. The best cars were allowed to pass their 'genes' on to the next generation, with a chance for mutations to occur. Building the crossover function and working with matrices were the most challenging part of this project but the experience served me well later at university when we took a deep dive into neural networks",
+      
       texture: '/textures/project/project2.mp4',
       logo: '/assets/project-logo2.png',
       logoStyle: {
@@ -111,32 +106,23 @@ export const navLinks = [
       tags: [
         {
           id: 1,
-          name: 'React.js',
-          path: '/assets/react.svg',
+          name: 'Unity Engine',
+          path: '/assets/unity.png',
         },
         {
           id: 2,
-          name: 'TailwindCSS',
-          path: 'assets/tailwindcss.png',
+          name: 'C#',
+          path: 'assets/Csharp.png',
         },
-        {
-          id: 3,
-          name: 'TypeScript',
-          path: '/assets/typescript.png',
-        },
-        {
-          id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
-        },
+        
       ],
     },
     {
-      title: 'CarePulse - Health Management System',
-      desc: 'An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.',
+      title: 'Statistical Research on Impact of FPS on Player Performance ',
+      desc: 'Designed, executed and analysed a statistical research investigation exploring the impact that FPS has on player performance in video games',
       subdesc:
-        'With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.',
-      href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
+        "Much of my fascination with statistics can be pin-pointed to the love of data. More specifically, the knowledge data hides in plain sight. This project allowed me to put my experimental design theory into practice and collect some data of my own. I built a small video game that would vary in-game frame rates and collect data about player performance in the background. It was also a fantastic excuse to play videos games while furthering my degree. Once I had collected enough data from students, I performed a statistical analysis and summarised my findings. To my suspicion, the frame rate did impact performance but became less impactful with increasing performance. Maybe I don't need that 265Hz monitor after all...",
+     
       texture: '/textures/project/project3.mp4',
       logo: '/assets/project-logo3.png',
       logoStyle: {
@@ -150,32 +136,32 @@ export const navLinks = [
       tags: [
         {
           id: 1,
-          name: 'React.js',
-          path: '/assets/react.svg',
+          name: 'R.js',
+          path: '/assets/R.png',
         },
         {
           id: 2,
-          name: 'TailwindCSS',
-          path: 'assets/tailwindcss.png',
+          name: 'Unity Engine',
+          path: 'assets/unity.png',
         },
         {
           id: 3,
-          name: 'TypeScript',
-          path: '/assets/typescript.png',
+          name: 'C#',
+          path: '/assets/Csharp.png',
         },
         {
           id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
+          name: 'Python',
+          path: '/assets/python.png',
         },
       ],
     },
     {
-      title: 'Horizon - Online Banking Platform',
-      desc: 'Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.',
+      title: '5-Axis Robot Arm With Bluetooth Control',
+      desc: 'Elmo (yes thats the robots name) was a C++ project I worked on during a highschool break. It setoff my journey into understanding microcontrollers and later IoT (internet of things)',
       subdesc:
-        'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
-      href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
+        'Elmo was built using 5 individually driven servo motors, controlled by an Arduino Uno board. A bluetooth module interfaced with a custom app that I built using the MIT App Builder. The Arduino would recieve the values from the bluetooth board and, after calibrating the motors, would then write the values to the servos. There were definetly areas to improve on (like the build quality), but sometimes the lessons learnt are worth more than the product. You did good, Elmo',
+     
       texture: '/textures/project/project4.mp4',
       logo: '/assets/project-logo4.png',
       logoStyle: {
@@ -187,61 +173,15 @@ export const navLinks = [
       tags: [
         {
           id: 1,
-          name: 'React.js',
-          path: '/assets/react.svg',
+          name: 'C++',
+          path: '/assets/C++.png',
         },
         {
           id: 2,
-          name: 'TailwindCSS',
-          path: 'assets/tailwindcss.png',
+          name: 'MIT App Builder',
+          path: 'assets/mit.png',
         },
-        {
-          id: 3,
-          name: 'TypeScript',
-          path: '/assets/typescript.png',
-        },
-        {
-          id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
-        },
-      ],
-    },
-    {
-      title: 'Imaginify - AI Photo Manipulation App',
-      desc: 'Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.',
-      subdesc:
-        'Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.',
-      href: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
-      texture: '/textures/project/project5.mp4',
-      logo: '/assets/project-logo5.png',
-      logoStyle: {
-        backgroundColor: '#1C1A43',
-        border: '0.2px solid #252262',
-        boxShadow: '0px 0px 60px 0px #635BFF4D',
-      },
-      spotlight: '/assets/spotlight5.png',
-      tags: [
-        {
-          id: 1,
-          name: 'React.js',
-          path: '/assets/react.svg',
-        },
-        {
-          id: 2,
-          name: 'TailwindCSS',
-          path: 'assets/tailwindcss.png',
-        },
-        {
-          id: 3,
-          name: 'TypeScript',
-          path: '/assets/typescript.png',
-        },
-        {
-          id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
-        },
+        
       ],
     },
   ];
