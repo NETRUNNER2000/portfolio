@@ -4,7 +4,7 @@ import Hero from './Sections/Hero'
 import About from './Sections/About'
 import Projects from './Sections/Projects'
 import Contact from './Sections/Contact'
-import Footer from './Components/Footer'
+import Footer from './Sections/Footer'
 
 const App = () => {
     
