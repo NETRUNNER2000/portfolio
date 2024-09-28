@@ -1,13 +1,13 @@
 
 import { PerspectiveCamera } from '@react-three/drei'
 import {Canvas} from '@react-three/fiber'
-import GamingPC from '../Components/GamingPC'
+import GamingPC from '../components/GamingPC'
 import { Suspense } from 'react'
-import CanvasLoader from '../Components/CanvasLoader'
+import CanvasLoader from '../components/CanvasLoader'
 import { Leva, useControls } from 'leva'
-import CameraMovement from '../Components/CameraMovement'
+import CameraMovement from '../components/CameraMovement'
 import { useMediaQuery } from 'react-responsive'
-import HeroCamera from '../Components/HeroCamera'
+import HeroCamera from '../components/HeroCamera'
 const Hero = () => {
 
   const isMobile = useMediaQuery({maxWidth: 768})

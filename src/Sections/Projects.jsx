@@ -1,9 +1,9 @@
 import React, { Suspense } from 'react'
 import { myProjects } from '../constants'
 import { useState } from 'react';
-import CanvasLoader from '../Components/CanvasLoader';
+import CanvasLoader from '../components/CanvasLoader';
 import {Canvas} from '@react-three/fiber'
-import DemoComputer from '../Components/DemoComputer';
+import DemoComputer from '../components/DemoComputer';
 import { Center, OrbitControls } from '@react-three/drei';
 
 const Projects = () => {
@@ -52,10 +52,10 @@ const Projects = () => {
                 </div>
                 <div className="flex justify-between itemscenter mt-7">
                     <button className="arrow-btn" onClick={()=>handleNavigation('previous')}>
-                        <img src="/assets/left-arrow.png" className="w-4 h-4" alt="" />
+                        <img src="./portfolio/assets/left-arrow.png" className="w-4 h-4" alt="" />
                     </button>
                     <button className="arrow-btn" onClick={()=>handleNavigation('next')}>
-                        <img src="/assets/right-arrow.png" className="w-4 h-4" alt="" />
+                        <img src="./portfolio/assets/right-arrow.png" className="w-4 h-4" alt="" />
                     </button>
                 </div>
             </div>
