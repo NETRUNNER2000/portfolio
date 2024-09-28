@@ -26,7 +26,7 @@ export const navLinks = [
       id: 1,
       name: 'Emily Johnson',
       position: 'Marketing Director at GreenLeaf',
-      img: './assets/review1.png',
+      img: import.meta.env.BASE_URL+'/assets/review1.png',
       review:
         'Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.',
     },
@@ -34,7 +34,7 @@ export const navLinks = [
       id: 2,
       name: 'Mark Rogers',
       position: 'Founder of TechGear Shop',
-      img: './assets/review2.png',
+      img: import.meta.env.BASE_URL+'/assets/review2.png',
       review:
         'Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.',
     },
