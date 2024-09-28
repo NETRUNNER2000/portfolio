@@ -42,7 +42,7 @@ export const navLinks = [
       id: 3,
       name: 'John Dohsas',
       position: 'Project Manager at UrbanTech ',
-      img: './assets/review3.png',
+      img: import.meta.env.BASE_URL+'/assets/review3.png',
       review:
         'I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.',
     },
@@ -50,7 +50,7 @@ export const navLinks = [
       id: 4,
       name: 'Ether Smith',
       position: 'CEO of BrightStar Enterprises',
-      img: './assets/review4.png',
+      img: import.meta.env.BASE_URL+'/assets/review4.png',
       review:
         'Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.',
     },
@@ -63,19 +63,19 @@ export const navLinks = [
       subdesc:
         'I accepted the role as software architect during this project and created an event driven system in Unity for my team to build on top of. I spent much of my time optimising data structures, implementing parallel algorithms for performance and making sure the team was aware and ready to tackle changing requirements. Part of my time was also spent sharing my knowledge of Unity with other groups and discussing new ways to shave off a few milliseconds wherever possible. I am very proud of this project, as it was an opportunity for me to put the passions and skills I have accumulated over the last 8 years into a single system. In many ways PlantGen24 is a piece of me that I will fondly look back on',
       
-      texture: '/textures/project/project1.mp4',
-      logo: './assets/project-logo1.png',
+      texture: import.meta.env.BASE_URL+'/textures/project/project1.mp4',
+      logo: import.meta.env.BASE_URL+'./assets/project-logo1.png',
       logoStyle: {
         backgroundColor: '#2A1816',
         border: '0.2px solid #36201D',
         boxShadow: '0px 0px 60px 0px #AA3C304D',
       },
-      spotlight: './assets/spotlight1.png',
+      spotlight: import.meta.env.BASE_URL+'/assets/spotlight1.png',
       tags: [
         {
           id: 1,
           name: 'Unity Engine',
-          path: './assets/unity.png',
+          path: import.meta.env.BASE_URL+'/assets/unity.png',
         },
         {
           id: 2,
@@ -95,14 +95,14 @@ export const navLinks = [
       subdesc:
         "With this project I built a simple neural network to control a car in Unity. The network took raycast distances as inputs before outputting values to the steering, breaks and accelerator. Collections of cars grouped as generations were created and evaluated according to a fitness function. Neural networks were encoded as 'genes' in this simulation. The best cars were allowed to pass their 'genes' on to the next generation, with a chance for mutations to occur. Building the crossover function and working with matrices were the most challenging part of this project but the experience served me well later at university when we took a deep dive into neural networks",
       
-      texture: '/textures/project/project2.mp4',
-      logo: './assets/project-logo2.png',
+      texture: import.meta.env.BASE_URL+'/textures/project/project2.mp4',
+      logo: import.meta.env.BASE_URL+'/assets/project-logo2.png',
       logoStyle: {
         backgroundColor: '#13202F',
         border: '0.2px solid #17293E',
         boxShadow: '0px 0px 60px 0px #2F6DB54D',
       },
-      spotlight: './assets/spotlight2.png',
+      spotlight: import.meta.env.BASE_URL+'/assets/spotlight2.png',
       tags: [
         {
           id: 1,
@@ -123,8 +123,8 @@ export const navLinks = [
       subdesc:
         "Much of my fascination with statistics can be pin-pointed to the love of data. More specifically, the knowledge data hides in plain sight. This project allowed me to put my experimental design theory into practice and collect some data of my own. I built a small video game that would vary in-game frame rates and collect data about player performance in the background. It was also a fantastic excuse to play videos games while furthering my degree. Once I had collected enough data from students, I performed a statistical analysis and summarised my findings. To my suspicion, the frame rate did impact performance but became less impactful with increasing performance. Maybe I don't need that 265Hz monitor after all...",
      
-      texture: '/textures/project/project3.mp4',
-      logo: './assets/project-logo3.png',
+      texture: import.meta.env.BASE_URL+'/textures/project/project3.mp4',
+      logo: import.meta.env.BASE_URL+'/assets/project-logo3.png',
       logoStyle: {
         backgroundColor: '#60f5a1',
         background:
@@ -132,7 +132,7 @@ export const navLinks = [
         border: '0.2px solid rgba(208, 213, 221, 1)',
         boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
       },
-      spotlight: './assets/spotlight3.png',
+      spotlight: import.meta.env.BASE_URL+'/assets/spotlight3.png',
       tags: [
         {
           id: 1,

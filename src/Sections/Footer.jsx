@@ -9,7 +9,7 @@ const Footer = () => {
         <div className='flex justify-center items-center'>
             <div className="social-icon flex justify-center items-center">
                 <a href="https://github.com/NETRUNNER2000">
-                <img src="/assets/github.svg" className='w-10 h-10' />
+                <img src={import.meta.env.BASE_URL+"/assets/github.svg"} className='w-10 h-10' />
                 </a>
              </div>
         </div>
