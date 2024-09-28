@@ -10,7 +10,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 const GamingPC=(props)=> {
-  const { nodes, materials } = useGLTF('/scene.gltf')
+  const { nodes, materials } = useGLTF(import.meta.env.BASE_URL+'/scene.gltf')
   return (
     <group {...props} dispose={null}>
       <group
@@ -59,5 +59,5 @@ const GamingPC=(props)=> {
   )
 }
 
-useGLTF.preload('/computer__color.glb');
+useGLTF.preload(import.meta.env.BASE_URL+'/computer__color.glb');
 export default GamingPC;

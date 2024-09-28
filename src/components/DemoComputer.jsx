@@ -10,7 +10,7 @@ import React, { useEffect, useRef } from 'react'
 import { useGLTF, useVideoTexture } from '@react-three/drei'
 
 const DemoComputer = (props) =>{
-  const { nodes, materials } = useGLTF('/models/asus.glb')
+  const { nodes, materials } = useGLTF(import.meta.env.BASE_URL+'/models/asus.glb')
   const txt = useVideoTexture(props.texture ? props.texture : '/textures/default/default.mp4')
   return (
     <group {...props} dispose={null}>
@@ -605,5 +605,5 @@ const DemoComputer = (props) =>{
   )
 }
 
-useGLTF.preload('/models/asus.glb')
+useGLTF.preload('./models/asus.glb')
 export default DemoComputer;
