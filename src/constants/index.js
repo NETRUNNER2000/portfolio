@@ -80,12 +80,12 @@ export const navLinks = [
         {
           id: 2,
           name: 'C#',
-          path: 'assets/Csharp.png',
+          path: import.meta.env.BASE_URL+'/assets/Csharp.png',
         },
         {
           id: 3,
           name: 'Python',
-          path: './assets/python.png',
+          path: import.meta.env.BASE_URL+'/assets/python.png',
         },
       ],
     },
@@ -107,12 +107,12 @@ export const navLinks = [
         {
           id: 1,
           name: 'Unity Engine',
-          path: './assets/unity.png',
+          path: import.meta.env.BASE_URL+'/assets/unity.png',
         },
         {
           id: 2,
           name: 'C#',
-          path: 'assets/Csharp.png',
+          path: import.meta.env.BASE_URL+'/assets/Csharp.png',
         },
         
       ],
@@ -137,22 +137,22 @@ export const navLinks = [
         {
           id: 1,
           name: 'R.js',
-          path: './assets/R.png',
+          path: import.meta.env.BASE_URL+'/assets/R.png',
         },
         {
           id: 2,
           name: 'Unity Engine',
-          path: 'assets/unity.png',
+          path: import.meta.env.BASE_URL+'/assets/unity.png',
         },
         {
           id: 3,
           name: 'C#',
-          path: './assets/Csharp.png',
+          path: import.meta.env.BASE_URL+'/assets/Csharp.png',
         },
         {
           id: 4,
           name: 'Python',
-          path: './assets/python.png',
+          path: import.meta.env.BASE_URL+'/assets/python.png',
         },
       ],
     },
@@ -162,24 +162,24 @@ export const navLinks = [
       subdesc:
         'Elmo was built using 5 individually driven servo motors, controlled by an Arduino Uno board. A bluetooth module interfaced with a custom app that I built using the MIT App Builder. The Arduino would recieve the values from the bluetooth board and, after calibrating the motors, would then write the values to the servos. There were definetly areas to improve on (like the build quality), but sometimes the lessons learnt are worth more than the product. You did good, Elmo',
      
-      texture: '/textures/project/project4.mp4',
-      logo: './assets/project-logo4.png',
+      texture: import.meta.env.BASE_URL+'/textures/project/project4.mp4',
+      logo: import.meta.env.BASE_URL+'/assets/project-logo4.png',
       logoStyle: {
         backgroundColor: '#0E1F38',
         border: '0.2px solid #0E2D58',
         boxShadow: '0px 0px 60px 0px #2F67B64D',
       },
-      spotlight: './assets/spotlight4.png',
+      spotlight: import.meta.env.BASE_URL+'/assets/spotlight4.png',
       tags: [
         {
           id: 1,
           name: 'C++',
-          path: './assets/C++.png',
+          path: import.meta.env.BASE_URL+'/assets/C++.png',
         },
         {
           id: 2,
           name: 'MIT App Builder',
-          path: 'assets/mit.png',
+          path: import.meta.env.BASE_URL+'/assets/mit.png',
         },
         
       ],
