@@ -18,58 +18,7 @@ const positions = [
     [0, 5, 10]
   ];
   const controls = useControls("GamingPC", {
-    rotationX: {
-      value: 2.5,
-      min: -10,
-      max:30
-    },
-    scaleX:{
-      value:25,
-      min: 0,
-      max: 50
-    },
-    scaleY:{
-      value:25,
-      min: 0,
-      max: 50
-    },
-    scaleZ: {
-      value:25,
-      min: 0,
-      max: 50
-    },
-      posX:{
-        value:0,
-        min: 0,
-        max: 50
-      },
-      posY:{
-        value:1.5,
-        min: 0,
-        max: 50
-      },
-      posZ: {
-        value:0,
-        min: 0,
-        max: 50
-      
-      },      
-      rotX:{
-        value:-0.16,
-        min: -1,
-        max: 1
-      },
-      rotY:{
-        value:-0.06,
-        min: -1,
-        max: 1
-      },
-      rotZ: {
-        value:0.04,
-        min: 0,
-        max: 2
-      
-      }
+    
   })
   return (
     <section className="min-h-screen w-full flex flex-col relative">
@@ -92,15 +41,12 @@ const positions = [
             <ambientLight intensity={1}/>
             <HeroCamera>
             <GamingPC 
-              scale={[controls.scaleX,controls.scaleY,controls.scaleZ]}
+              scale={[25, 25, 25]}
               // scale = {25}
-              position={[controls.posX,controls.posY,controls.posZ]} 
-              rotation={[controls.rotX,controls.rotY,controls.rotZ]} />
-            
+              position={[0, 1.5, 0]} 
+              rotation={[-0.16,-0.06,0.04]} />
             </HeroCamera>
-         
           </Suspense>
-   
         </Canvas>
       </div>
     </section>
